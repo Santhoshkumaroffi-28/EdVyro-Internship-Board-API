@@ -1,0 +1,23 @@
+{
+  "name": "edvyro-internship-board-api",
+  "version": "1.0.0",
+  "description": "EdVyro Full Stack Development Task 2 - REST API and persistent SQLite data",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node src/init-db.js",
+    "db:seed": "node src/seed-db.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4"
+  }
+}
